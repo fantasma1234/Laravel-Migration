@@ -1,61 +1,51 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+# Laravel Migration
 
-## About Laravel
+Aprendendo a usar uma Migration
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Instalação
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Instalação do Projeto
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+```bash
+  git clone https://github.com/fantasma1234/Laravel-Migration
+  cd nome-projeto
+  composer install
+  npm install
+  npm run build
+  copy .env.example .env
+  php artisan key:generate
+  php artisan migrate
+  php aritisan serve
+```
 
-## Learning Laravel
+## Fotos do Processo de Instalação do Laravel
+Primeiro instale o composer e o xampp, depois abre o terminal e digite <br>
+<img width="478" height="95" alt="1" src="https://github.com/user-attachments/assets/a89bad50-f958-4257-a3e8-a6cbc55968fa" />
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Com o Laravel pronto digite para criar o projeto <br>
+Obs: Alunos é o nome do meu projeto, coloque o nome que você quiser <br>
+<img width="447" height="63" alt="2" src="https://github.com/user-attachments/assets/604d48cb-3d80-4326-ac21-3ee3e47566ff" />
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+<img width="750" height="413" alt="3" src="https://github.com/user-attachments/assets/e581b26a-3ac2-4ae2-a994-e5caf4cfa10c" />
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+<img width="747" height="205" alt="4" src="https://github.com/user-attachments/assets/3d3e8ac4-c849-4042-a60c-73d747a27780" />
 
-## Laravel Sponsors
+Obs: Antes do yes ligue o XAMPP<br>
+<img width="751" height="36" alt="5" src="https://github.com/user-attachments/assets/acf831d8-6639-476e-9ca5-dd2bbbd248f7" />
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+<img width="752" height="52" alt="6" src="https://github.com/user-attachments/assets/06096777-ef67-44cf-9702-008084e58170" />
 
-### Premium Partners
+<img width="750" height="192" alt="7" src="https://github.com/user-attachments/assets/3c29e95b-e10c-4bcc-a15a-66e511f09afe" />
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+## Fotos do Processo de Execução da Migration
+Use o comando <code>php artisan make:migration create_(Insira o nome da sua tabela)_table</code> <br>
+Isso cria uma migration <br>
+<img width="747" height="121" alt="8" src="https://github.com/user-attachments/assets/9716c29d-8ee8-47ca-bb70-f89487c88418" />
 
-## Contributing
+Crie alguns campos na sua migration <br>
+<img width="1264" height="900" alt="code" src="https://github.com/user-attachments/assets/d3b78c26-ff9a-4cf3-bcab-7e92e9bed4b0" />
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Agora digite <code>php artisan migrate:refresh</code> <br>
+reseta todas as migrations e as executa automaticamente <br>
+<img width="752" height="246" alt="9" src="https://github.com/user-attachments/assets/f4a87252-304d-40f1-8479-426c85d57998" />
